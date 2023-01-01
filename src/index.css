@@ -1,0 +1,38 @@
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+/* font-family: 'League Gothic', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+/* font-family: 'Limelight', cursive; */
+
+
+:root {
+  font-family: 'Limelight', cursive;
+  font-size: 16px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+}
+::selection {
+  background: rgb(97, 148, 121);
+  color: rgb(246, 241, 243);
+}
+
+img{
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgb(246, 241, 243);
+  color: rgb(55, 38, 56);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}

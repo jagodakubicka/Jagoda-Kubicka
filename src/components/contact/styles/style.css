@@ -1,0 +1,42 @@
+.contact{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.contact__title{
+ text-align: center;
+}
+.contact__title h2{
+ font-size: 40px;
+ color: rgb(72, 50, 73);
+}
+
+.contact__container{
+ max-width: 900px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto;
+ 
+}
+
+.contact__single{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+ margin: 0;
+ padding: 0;
+ width: fit-content;
+ min-width: 280px;
+}
+.contact__single:hover p,
+.contact__single:hover .icon {
+ color: rgb(97, 148, 121);
+ transition: .4s ease-in-out;
+}
+.contact__single p{
+ font-size: 30px;
+  font-family: 'League Gothic', sans-serif;
+  color: rgb(129, 55, 83);
+}

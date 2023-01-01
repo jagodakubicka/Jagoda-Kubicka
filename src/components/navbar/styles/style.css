@@ -1,0 +1,63 @@
+.navbar{
+ width: 100%;
+  background-color: #fff;
+  border-radius: 0% 100% 0% 100% / 53% 0% 100% 47%;
+  margin: 0;
+  padding: 1em 0;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar ul{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.navbar ul li{
+ margin: 10px;
+ list-style: none;
+ display: flex;
+ justify-content: center;
+}
+
+.navbar ul li a{
+ text-decoration: none;
+ text-transform: uppercase;
+ color: rgb(72, 50, 73);
+ margin: 10px 20px;
+ font-family: 'League Gothic', sans-serif;
+ font-size: 25px;
+}
+
+.navbar ul li a::after{
+ content: '';
+ width: 100%;
+ display: block;
+ border-bottom: 5px solid rgb(97, 148, 121);
+ transform: scale(0);
+ transition: transform 0.5s ease-in-out;
+}
+
+.navbar ul li a:hover::after
+{
+ transform: scale(1);
+}
+.navbar ul li a.active{
+  width: 100%;
+ display: block;
+ border-bottom: 5px solid rgb(97, 148, 121);
+ transform: scale(1);
+}
+
+@media (max-width: 600px){
+  .navbar ul{
+    flex-direction: column;
+  }
+  .navbar ul li{
+    margin: 5px;
+  }
+  .navbar ul li a{
+    margin: 0;
+  }
+}
