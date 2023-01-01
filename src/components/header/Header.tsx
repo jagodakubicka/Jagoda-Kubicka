@@ -17,13 +17,14 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export default function Header() {
   const wrapper= useRef(null);
 
-
-  useEffect(() => {
+  if (!wrapper) {
+    return null
+  } else{
+     useEffect(() => {
+    
     const [elements] = wrapper.current.children;
-
     const branch = elements.getElementById('sakura-branch-1');
     const flowers = elements.getElementById('flowers').children;
-
     const petals = elements.getElementById('petals').children;
     const smallPetals = elements.querySelectorAll('.small-petal');
     const mediumPetals = elements.getElementById('medium').children;
@@ -63,12 +64,17 @@ export default function Header() {
   
 
     tl.fromTo(branch, {rotate:0, y:0},{rotate:2,y:-10, duration: 5, repeat:-1, yoyo: true}, '<');
-  })
+    
+    
+  }, []);
+  }
+
+ 
 
 
   return (
     <div className='header'>
-      <div ref={wrapper}  className="header-animations">
+      <div ref={wrapper} className="header-animations">
         <Sakura className='header-sakuraBranch' />
       </div>
      <div className="header__content">
