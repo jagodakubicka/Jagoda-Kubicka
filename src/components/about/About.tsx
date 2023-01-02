@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 //img
-import pl from require('../about/img/pl.png')
+import pl from '../about/img/pl.png'
 import uk from './img/uk.png'
 import jp from './img/jp.png'
 
