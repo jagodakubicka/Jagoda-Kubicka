@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 //img
-// import pl from require('../about/img/pl.png')
-// import uk from './img/uk.png'
-// import jp from './img/jp.png'
+import pl from require('../about/img/pl.png')
+import uk from './img/uk.png'
+import jp from './img/jp.png'
 
 
 //styles
@@ -22,15 +22,15 @@ export default function About() {
           <p>Feel more than welcome to talk to me in</p>
           <div className="about__lang">
             <div className="about__langSingle">
-              {/* <img src={pl} alt="Polish" /> */}
+              <img src={pl} alt="Polish" />
               <p>Polish</p>
             </div>
             <div className="about__langSingle">
-              {/* <img src={uk} alt="English" /> */}
+              <img src={uk} alt="English" />
               <p>English</p>
             </div>
             <div className="about__langSingle">
-              {/* <img src={jp} alt="Japanese" /> */}
+              <img src={jp} alt="Japanese" />
               <p>Japanese</p>
             </div>
           </div>
