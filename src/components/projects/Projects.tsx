@@ -12,7 +12,7 @@ const CARDS = [
     I have added maximum item amount in cart ( max to 25 items per product) together with alert message when limit is reached.`,
     github: 'https://github.com/jagodakubicka/Healthy-skin',
     preview: 'https://healthy-skin.vercel.app/',
-    img: './src/components/projects/img/Healthy-skin.png',
+    img: './img/Healthy-skin.png',
     id: 1,
   },
   {
@@ -21,7 +21,7 @@ const CARDS = [
     desc: `Small App created as close as possible to the provided design from jpg files. Challenge by Frontend Mentor, a platform with challenges to improve coding skills.This project focuses on VUE & SCSS.`,
     github: 'https://github.com/jagodakubicka/tip-calculator',
     preview: 'https://gilded-stroopwafel-59944c.netlify.app/',
-    img: './src/components/projects/img/tip-calculator.png',
+    img: './img/tip-calculator.png',
     id: 2,
   },
   {
@@ -30,7 +30,7 @@ const CARDS = [
     desc: '',
     github: 'https://github.com/jagodakubicka/Some-Tea-Vue',
     preview: 'https://kaleidoscopic-basbousa-c6c82c.netlify.app/',
-    img: './src/components/projects/img/some-tea.png',
+    img: './img/some-tea.png',
     id: 3,
   },
   {
@@ -42,7 +42,7 @@ const CARDS = [
     github:
       'https://github.com/jagodakubicka/Studio-Adagio-Ballet-Dancing-School',
     preview: 'https://studio-adagio-ballet-dancing-school.hostman.site/',
-    img: './src/components/projects/img/studio-adagio.png',
+    img: './img/studio-adagio.png',
     id: 4,
   },
   {
@@ -51,7 +51,7 @@ const CARDS = [
     desc: `Full site created as close as possible to the provided design from jpg files. Challenge by Frontend Mentor, a platform with challenges to improve coding skills.This project focuses on SCSS and JavaScript.`,
     github: 'https://github.com/jagodakubicka/Space-Tourism-Frontend-Mentor',
     preview: 'https://space-tourism-frontend-mentor-one.vercel.app/',
-    img: './src/components/projects/img/space.png',
+    img: './img/space.png',
     id: 5,
   },
 ]
