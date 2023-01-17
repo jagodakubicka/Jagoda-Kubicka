@@ -3,7 +3,6 @@ import React, {useState, useEffect} from 'react';
 import data from './data.json';
 import './styles/styles.css';
 
-
 export default function Projects() {
 
 
