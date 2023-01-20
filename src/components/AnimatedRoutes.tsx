@@ -11,7 +11,7 @@ export default function AnimatedRoutes() {
   return (
     <AnimatePresence>
      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />}></Route>
+        <Route index element={<Home />}></Route>
         <Route path="/projects" element={<Projects/>}></Route>
      
       </Routes>
