@@ -1,0 +1,25 @@
+.notFound-ctn{
+ margin:  0 auto;
+ text-align: center;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.notFound-ctn h2{
+ font-size: 4rem;
+}
+
+.notFound-ctn p{
+ font-size: 2rem;
+  font-family: 'League Gothic', sans-serif;
+}
+
+.notFound-ctn p a{
+ padding: 20px;
+ border-radius: 20px;
+ color: rgb(129, 55, 83);
+  font-family: 'League Gothic', sans-serif;
+}
