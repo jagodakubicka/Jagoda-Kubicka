@@ -1,5 +1,6 @@
 .about{
   width: 100%;
+  overflow: visible;
 }
 .about__title{
  text-align: center;
