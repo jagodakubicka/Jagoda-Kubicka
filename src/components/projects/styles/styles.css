@@ -19,6 +19,13 @@
 .project:nth-child(even){
  flex-direction: row-reverse;
 }
+.project-filterCtn{
+ margin-top: 50px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
 .project__filterBtn{
  border: none;
   margin: 5px;
@@ -36,10 +43,13 @@
 transition: .4s ease-in-out;
 transform: scale(1.02);
 }
-.project__filterBtn:focus{
+.project__filterBtn:focus,
+.project__filterBtn--active
+{
  background-color: rgb(97, 148, 121);
  transition: .4s ease-in-out;
 }
+
 .project__content{
  width: 400px;
  min-width: 280px;

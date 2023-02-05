@@ -1,16 +1,32 @@
-import React, {useState, useEffect} from 'react';
 
+import {useState} from 'react';
+
+import Filter from './Filter';
 import data from './data.json';
 import './styles/styles.css';
 
 export default function Projects() {
+const [project, setProject] = useState(data)
+const [filtered, setFiltered] = useState(data);
+const [activeBtn, setActiveBtn] = useState('all');
 
+const fetchProject = () => {
+  const projectData = data
+  setProject(projectData);
+  setFiltered(projectData);
+}
 
   return (
-   
-      <div className="projects__container">
+   <>
+    <Filter 
+    project = {project} 
+    setFiltered = {setFiltered}
+    activeBtn = {activeBtn}
+    setActiveBtn = {setActiveBtn}
+    />
+   <div className="projects__container">
        
-    {data.map(({id, title, tags, desc, github, preview, img}) => (
+    {filtered.map(({id, title, tags, desc, github, preview, img}) => (
       <div className='project' key={id}>
         <div className="project__content">
           <h3 className="project__title">{title}</h3>
@@ -30,6 +46,8 @@ export default function Projects() {
     ))}
     
     </div>
+   </>
+      
     
     
   )
