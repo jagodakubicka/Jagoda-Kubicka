@@ -19,7 +19,7 @@
   },
   {
     "title": "Some Tea",
-    "tags": ["HTML", "CSS", "VUE"],
+    "tags": ["HTML", "SCSS", "VUE"],
     "desc": "",
     "github": "https://github.com/jagodakubicka/Some-Tea-Vue",
     "preview": "https://kaleidoscopic-basbousa-c6c82c.netlify.app/",
