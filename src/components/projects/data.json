@@ -10,7 +10,7 @@
   },
   {
     "title": "Tip-Calculator App - challenge from Frontend Mentor",
-    "tags": ["HTML", "CSS", "VUE"],
+    "tags": ["HTML", "SCSS", "VUE"],
     "desc": "Small App created as close as possible to the provided design from jpg files. Challenge by Frontend Mentor, a platform with challenges to improve coding skills.This project focuses on VUE & SCSS.",
     "github": "https://github.com/jagodakubicka/tip-calculator",
     "preview": "https://gilded-stroopwafel-59944c.netlify.app/",
@@ -19,7 +19,7 @@
   },
   {
     "title": "Some Tea",
-    "tags": ["HTML", "SCSS", "VUE"],
+    "tags": ["HTML", "CSS", "VUE"],
     "desc": "",
     "github": "https://github.com/jagodakubicka/Some-Tea-Vue",
     "preview": "https://kaleidoscopic-basbousa-c6c82c.netlify.app/",
