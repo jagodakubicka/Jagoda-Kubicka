@@ -35,14 +35,6 @@
     "preview": "https://studio-adagio-ballet-dancing-school.hostman.site/",
     "img": "./img/studio-adagio.png",
     "id": 4
-  },
-  {
-    "title": " Space-Tourism",
-   "tags": ["HTML", "SCSS", "JavaScript"],
-    "desc": "Full site created as close as possible to the provided design from jpg files. Challenge by Frontend Mentor, a platform with challenges to improve coding skills.This project focuses on SCSS and JavaScript.",
-    "github": "https://github.com/jagodakubicka/Space-Tourism-Frontend-Mentor",
-    "preview": "https://space-tourism-frontend-mentor-one.vercel.app/",
-    "img": "./img/space.png",
-    "id": 5
   }
+ 
 ]
