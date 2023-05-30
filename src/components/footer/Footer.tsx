@@ -9,6 +9,7 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 export default function Footer() {
   const wrapper = useRef(null);
   const tl = gsap.timeline({defaults:{duration:1} })
+  const today = new Date()
 
   useLayoutEffect(()=> {
     tl.fromTo(wrapper.current, {y:0 },{y:0,repeat: -1})
@@ -23,7 +24,7 @@ export default function Footer() {
     <div  className='footer'>
       <div className="footer-mainCtn">
         <div className='footer-container'>
-        © 2022 | coded and designed by Jagoda Kubicka
+        © {today.getFullYear()} | coded and designed by Jagoda Kubicka
       </div>
      
           <div ref={wrapper} onClick={() => {
