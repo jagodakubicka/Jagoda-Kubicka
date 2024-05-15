@@ -1,12 +1,27 @@
 [
   {
+    "title": "Japanese Site",
+    "tags": ["HTML", "CSS", "JavaScript", "Anime.js"],
+    "desc": "Project focuses on recreating some of elements from sarigato.com website, as a learning opportunity for using Anime.js and CSS animations.",
+    "github": "https://github.com/jagodakubicka/japanese-site",
+    "preview": "https://japanese-site-xi.vercel.app/",
+    "img": {
+      "desktop": "./img/japanese-site-desktop.webp",
+      "mobile": "./img/japanese-site-mobile.webp"
+    },
+    "id": 1
+  },
+  {
     "title": "Healthy Skin e-commerce site",
     "tags": ["HTML", "CSS", "JavaScript"],
     "desc": "This is a e-commerce store for cosmetics company made with only front-end features. Shopping cart logic is written with support of Coding Addict (John Smilga) tutorial whose video was uploaded on freeCodeCamp.org channel. I have added maximum item amount in cart ( max to 25 items per product) together with alert message when limit is reached.",
     "github": "https://github.com/jagodakubicka/Healthy-skin",
     "preview": "https://healthy-skin.vercel.app/",
-    "img": "./img/Healthy-skin.png",
-    "id": 1
+    "img": {
+      "desktop": "./img/healthy-skin-desktop.webp",
+      "mobile": "./img/healthy-skin-mobile.webp"
+    },
+    "id": 2
   },
   {
     "title": "Tip-Calculator App - challenge from Frontend Mentor",
@@ -14,8 +29,11 @@
     "desc": "Small App created as close as possible to the provided design from jpg files. Challenge by Frontend Mentor, a platform with challenges to improve coding skills.This project focuses on VUE & SCSS.",
     "github": "https://github.com/jagodakubicka/tip-calculator",
     "preview": "https://gilded-stroopwafel-59944c.netlify.app/",
-    "img": "./img/tip-calculator.png",
-    "id": 2
+    "img": {
+      "desktop": "./img/tip-calculator-desktop.webp",
+      "mobile": "./img/tip-calculator-mobile.webp"
+    },
+    "id": 3
   },
   {
     "title": "Some Tea",
@@ -23,18 +41,10 @@
     "desc": "",
     "github": "https://github.com/jagodakubicka/Some-Tea-Vue",
     "preview": "https://kaleidoscopic-basbousa-c6c82c.netlify.app/",
-    "img": "./img/some-tea.png",
-    "id": 3
-  },
-  {
-    "title": "Studio Adagio",
-   "tags": ["HTML", "CSS", "JavaScript"],
-    "desc": "Full website for a dancing studio. I saw a video of a ballet dancer which inspired me to try out a landing page with a video on the background. After creating it, I couldn't stop and I finished with full website. I wanted to challenge myself with a simple yet consistant design. Java Script is used here for a menu toggle button and pop up message on 'our offer page' with promotion info.",
-    "github":
-      "https://github.com/jagodakubicka/Studio-Adagio-Ballet-Dancing-School",
-    "preview": "https://studio-tanca-adagio.netlify.app/",
-    "img": "./img/studio-adagio.png",
+    "img": {
+      "desktop": "./img/some-tea-desktop.webp",
+      "mobile": "./img/some-tea-mobile.webp"
+    },
     "id": 4
   }
- 
 ]
