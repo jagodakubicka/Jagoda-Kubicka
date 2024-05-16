@@ -1,74 +1,68 @@
-// @ts-nocheck
-import { useEffect} from "react";
-import data from './data.json';
+import { useEffect } from 'react';
 
-function Filter({setActiveBtn, activeBtn, setFiltered, project}){
-
-
- useEffect(() => {
-  if(activeBtn === 'all'){
-   setFiltered(project);
-   return;
-  }
-  const filtered = project.filter((item)=> item.tags.includes(activeBtn)
-  );
-  setFiltered(filtered);
- }, [activeBtn]);
-
-return(
- <div className="project-filterCtn">
-   <button 
-    className={`project__filterBtn ${activeBtn === 'all' ? "project__filterBtn--active" : ""}`}
-    onClick={()=> setActiveBtn('all')}
-    >All
-    </button>
-
-     <button 
-    className={`project__filterBtn ${activeBtn === 'HTML' ? "project__filterBtn--active" : ""}`}
-    onClick={()=> setActiveBtn('HTML')}
-    >HTML
-    </button>
-
-     <button 
-    className={`project__filterBtn ${activeBtn === 'CSS' ? "project__filterBtn--active" : ""}`}
-    onClick={()=> setActiveBtn('CSS')}
-    >CSS
-    </button>
-
-    <button 
-    className={`project__filterBtn ${activeBtn === 'SCSS' ? "project__filterBtn--active" : ""}`}
-    onClick={()=> setActiveBtn('SCSS')}
-    >SCSS
-    </button>
-
-     <button 
-    className={`project__filterBtn ${activeBtn === 'JavaScript' ? "project__filterBtn--active" : ""}`}
-    onClick={()=> setActiveBtn('JavaScript')}
-    >JavaScript
-    </button>
-
-    <button 
-    className={`project__filterBtn ${activeBtn === 'VUE' ? "project__filterBtn--active" : ""}`}
-    onClick={()=> setActiveBtn('VUE')}
-    >VUE
-    </button>
-
-  {/* {data.map(({tags, id}) => (
-    <div key={id}>
-
-    {tags.map((btn => 
-    <button 
-     className={`project__filterBtn ${activeBtn === btn ? "project__filterBtn--active" : ""}`} 
-    key={btn}
-    onClick={()=> setActiveBtn(btn)}
-    >{btn}
-    </button>
-    ))}
-    </div>
-  ))} */}
-
- </div>
-)
+interface ImgProps {
+  desktop: string;
+  mobile: string;
+}
+interface ProjectProps {
+  title: string;
+  tags: string[];
+  desc: string;
+  github: string;
+  preview: string;
+  img: ImgProps;
+  id: number;
+}
+interface FilterProps {
+  setActiveBtn: (btn: string) => void;
+  activeBtn: string;
+  setFiltered: (projects: ProjectProps[]) => void;
+  projects: ProjectProps[];
 }
 
-export default Filter;
+export const Filter: React.FC<FilterProps> = ({
+  setActiveBtn,
+  activeBtn,
+  setFiltered,
+  projects,
+}: FilterProps) => {
+  useEffect(() => {
+    if (activeBtn === 'all') {
+      setFiltered(projects);
+      return;
+    }
+    const filtered = projects.filter((item) => item.tags.includes(activeBtn));
+    setFiltered(filtered);
+  }, [activeBtn]);
+
+  const projectsTags = projects.map((item) => {
+    return item.tags;
+  });
+  const tagsArray = projectsTags.flat(1);
+  const removedDuplicatedTags = [...new Set(tagsArray)];
+
+  return (
+    <div className='project-filterCtn'>
+      <button
+        className={`project__filterBtn ${
+          activeBtn === 'all' ? 'project__filterBtn--active' : ''
+        }`}
+        onClick={() => setActiveBtn('all')}>
+        All
+      </button>
+
+      {removedDuplicatedTags.map((tag, index) => (
+        <div key={index}>
+          <button
+            className={`project__filterBtn ${
+              activeBtn === tag ? 'project__filterBtn--active' : ''
+            }`}
+            key={tag}
+            onClick={() => setActiveBtn(tag)}>
+            {tag}
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+};

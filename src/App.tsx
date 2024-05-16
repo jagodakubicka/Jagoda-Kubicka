@@ -5,7 +5,6 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import Navbar from './components/navbar/RootLayout';
 import Footer from './components/footer/Footer';
 import './App.css';
 import RootLayout from './components/navbar/RootLayout';

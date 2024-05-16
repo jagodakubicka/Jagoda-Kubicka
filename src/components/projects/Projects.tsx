@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Filter from './Filter';
+import { Filter } from './Filter';
 import data from './data.json';
 import './styles/styles.css';
 
@@ -18,7 +18,7 @@ export default function Projects() {
   return (
     <>
       <Filter
-        project={project}
+        projects={project}
         setFiltered={setFiltered}
         activeBtn={activeBtn}
         setActiveBtn={setActiveBtn}
