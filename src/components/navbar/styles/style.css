@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  background-color: #fff;
+  background: var(--light-color);
   border-radius: 0% 100% 0% 100% / 53% 0% 100% 47%;
   margin: 0;
   padding: 1em 0;
