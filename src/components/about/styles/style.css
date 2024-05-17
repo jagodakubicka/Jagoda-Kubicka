@@ -11,14 +11,16 @@
 .about__content {
   max-width: 900px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 50px;
 }
 
 .about__me {
-  max-width: 400px;
+  max-width: 100%;
   min-width: 250px;
   padding: 10px;
 }

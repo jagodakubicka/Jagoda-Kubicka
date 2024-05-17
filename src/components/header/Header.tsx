@@ -111,9 +111,9 @@ export default function Header() {
         </div>
         <div className='header__text'>
           <p>
-            I'm a curiosity-driven enthusiast of building websites and Apps.
+            I'm a curiosity-driven enthusiast of building websites and apps.
           </p>
-          <p>Also a fan of Japanese culture</p>
+          <p>Also a fan of Japanese culture.</p>
         </div>
       </div>
     </div>
