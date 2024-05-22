@@ -66,7 +66,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 .project-img__desktop {
   width: 250px;
@@ -88,6 +87,7 @@
     right: 0;
     margin: 0 auto;
   }
+  scale: 0.8;
 }
 .project-img__mobile {
   width: 150px;
@@ -108,6 +108,7 @@
     right: 0;
     margin: 0 auto;
   }
+  scale: 0.8;
 }
 .project-img__screen {
   background-color: var(--light-color);

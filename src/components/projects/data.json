@@ -2,7 +2,7 @@
   {
     "title": "Japanese Site",
     "tags": ["HTML", "CSS", "JavaScript", "Anime.js"],
-    "desc": "Project focuses on recreating some of elements from sarigato.com website, as a learning opportunity for using Anime.js and CSS animations.",
+    "desc": "Project focuses on recreating some of design elements from sarigato.com website, as a learning opportunity for using Anime.js and CSS animations.",
     "github": "https://github.com/jagodakubicka/japanese-site",
     "preview": "https://japanese-site-xi.vercel.app/",
     "img": {
@@ -38,7 +38,7 @@
   {
     "title": "Some Tea",
     "tags": ["HTML", "CSS", "VUE"],
-    "desc": "",
+    "desc": "Basic restaurant menu project in Vue with filtering buttons.",
     "github": "https://github.com/jagodakubicka/Some-Tea-Vue",
     "preview": "https://kaleidoscopic-basbousa-c6c82c.netlify.app/",
     "img": {
@@ -46,5 +46,17 @@
       "mobile": "./img/some-tea-mobile.webp"
     },
     "id": 4
+  },
+  {
+    "title": "Comments section",
+    "tags": ["HTML", "CSS", "React", "TypeScript"],
+    "desc": "Comment section application built with React and TypeScript. The app features a reusable modal component and allows users to add, delete, and view comments.",
+    "github": "https://github.com/jagodakubicka/comments-section",
+    "preview": "https://comments-section-5sww.vercel.app/",
+    "img": {
+      "desktop": "./img/comments-section-desktop.webp",
+      "mobile": "./img/comments-section-mobile.webp"
+    },
+    "id": 5
   }
 ]

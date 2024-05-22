@@ -46,7 +46,6 @@ export default function Projects() {
               </div>
             </div>
             <div className='project-img'>
-              {/* <img src={img} alt={title} /> */}
               <div className='project-img__desktop'>
                 <div className='project-img__screen project-img__screen--desktop'>
                   <img src={img.desktop} alt={title} />
