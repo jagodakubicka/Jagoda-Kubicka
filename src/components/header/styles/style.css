@@ -60,6 +60,7 @@ svg {
 .header__text p {
   font-size: 25px;
   margin: 0;
+  text-wrap: pretty;
 }
 @media (max-width: 600px) {
   .header__title h1 {

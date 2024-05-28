@@ -24,6 +24,11 @@
     rgba(162, 159, 159, 1) 40%,
     rgba(203, 203, 203, 1) 100%
   );
+  --primary-gradient: linear-gradient(
+    328deg,
+    rgb(253, 253, 253) 39%,
+    rgb(241, 215, 225) 87%
+  );
 
   --max-content-width: 1200px;
 }
@@ -39,7 +44,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--primary-light-color);
+  background: var(--primary-gradient);
   color: var(--primry-dark-color);
   font-family: var(--primary-font);
   font-size: 1rem;
