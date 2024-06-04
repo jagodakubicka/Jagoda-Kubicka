@@ -6,7 +6,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import pl from './img/pl.png';
 import uk from './img/uk.png';
 import jp from './img/jp.png';
-
+import data from './data.json';
 //styles
 import './styles/style.css';
 
@@ -70,13 +70,11 @@ export default function About() {
         <div className='about__desc'>
           <h3>What I use to build stuff</h3>
           <div className='about__techStack'>
-            <div className='about__techSingle'>HTML</div>
-            <div className='about__techSingle'>CSS</div>
-            <div className='about__techSingle'>SCSS</div>
-            <div className='about__techSingle'>JavaScript</div>
-            <div className='about__techSingle'>TypeScript</div>
-            <div className='about__techSingle'>React</div>
-            <div className='about__techSingle'>GSAP</div>
+            {data.map((item, index) => (
+              <div key={index} className='about__techSingle'>
+                {item}
+              </div>
+            ))}
           </div>
           <div className='about__projects'>
             <Link to='/projects'>See my projects</Link>
