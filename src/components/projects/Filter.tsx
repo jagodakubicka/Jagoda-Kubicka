@@ -12,6 +12,7 @@ interface ProjectProps {
   preview: string;
   img: ImgProps;
   id: number;
+  completed: boolean;
 }
 interface FilterProps {
   setActiveBtn: (btn: string) => void;

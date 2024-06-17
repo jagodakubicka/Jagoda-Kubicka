@@ -10,6 +10,19 @@ import jp from './img/jp.png';
 //styles
 import './styles/style.css';
 
+const techStack = [
+  'html',
+  'css',
+  'scss',
+  'javascript',
+  'typescript',
+  'react',
+  'vue',
+  'gsap',
+  'bootstrap',
+  'tailwind',
+];
+
 export default function About() {
   const { scrollY } = useScroll();
   const leftDoorX = useTransform(scrollY, [0, 800], ['0vw', '-100vw']);
@@ -70,13 +83,9 @@ export default function About() {
         <div className='about__desc'>
           <h3>What I use to build stuff</h3>
           <div className='about__techStack'>
-            <div className='about__techSingle'>HTML</div>
-            <div className='about__techSingle'>CSS</div>
-            <div className='about__techSingle'>SCSS</div>
-            <div className='about__techSingle'>JavaScript</div>
-            <div className='about__techSingle'>TypeScript</div>
-            <div className='about__techSingle'>React</div>
-            <div className='about__techSingle'>GSAP</div>
+            {techStack.map((item) => (
+              <div className='about__techSingle'>{item}</div>
+            ))}
           </div>
           <div className='about__projects'>
             <Link to='/projects'>See my projects</Link>

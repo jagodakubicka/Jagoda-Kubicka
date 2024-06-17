@@ -1,5 +1,31 @@
 [
   {
+    "title": "Pet App",
+    "tags": ["Next.js", "Tailwind", "TypeScript"],
+    "desc": "Project in collaboration with other Developers. Pet App is for individual pet owners as well as for animal shelters, trainers or pet hotels to store data about each pet to help with vet appointents, medication and other pet informations.",
+    "github": "https://github.com/WitchDevelops/cardboard-fort",
+    "preview": "https://cardboard-fort.vercel.app/",
+    "img": {
+      "desktop": "",
+      "mobile": ""
+    },
+    "id": 1,
+    "completed": false
+  },
+  {
+    "title": "Japan Journeys",
+    "tags": ["HTML", "CSS", "VUE", "TypeScript", "Firebase"],
+    "desc": "Travel guide about Japan with places selected from my presonal favourites. Each place has also a comments section for review, and if logged in as Admin, also possible to add, edit and remove posts.",
+    "github": "https://github.com/jagodakubicka/japan-journeys",
+    "preview": "",
+    "img": {
+      "desktop": "",
+      "mobile": ""
+    },
+    "id": 2,
+    "completed": false
+  },
+  {
     "title": "Japanese Site",
     "tags": ["HTML", "CSS", "JavaScript", "Anime.js"],
     "desc": "Project focuses on recreating some of design elements from sarigato.com website, as a learning opportunity for using Anime.js and CSS animations.",
@@ -9,7 +35,8 @@
       "desktop": "./img/japanese-site-desktop.webp",
       "mobile": "./img/japanese-site-mobile.webp"
     },
-    "id": 1
+    "id": 3,
+    "completed": true
   },
   {
     "title": "Healthy Skin e-commerce site",
@@ -21,7 +48,8 @@
       "desktop": "./img/healthy-skin-desktop.webp",
       "mobile": "./img/healthy-skin-mobile.webp"
     },
-    "id": 2
+    "id": 4,
+    "completed": true
   },
   {
     "title": "Tip-Calculator App - challenge from Frontend Mentor",
@@ -33,7 +61,8 @@
       "desktop": "./img/tip-calculator-desktop.webp",
       "mobile": "./img/tip-calculator-mobile.webp"
     },
-    "id": 3
+    "id": 5,
+    "completed": true
   },
   {
     "title": "Some Tea",
@@ -45,18 +74,20 @@
       "desktop": "./img/some-tea-desktop.webp",
       "mobile": "./img/some-tea-mobile.webp"
     },
-    "id": 4
+    "id": 6,
+    "completed": true
   },
   {
     "title": "Comments section",
     "tags": ["HTML", "CSS", "React", "TypeScript"],
-    "desc": "Comment section application built with React and TypeScript. The app features a reusable modal component and allows users to add, delete, and view comments.",
+    "desc": "Comment section application built with React and TypeScript. The app features a reusable modal component and allows users to add, edit, delete, and view comments.",
     "github": "https://github.com/jagodakubicka/comments-section",
     "preview": "https://comments-section-5sww.vercel.app/",
     "img": {
       "desktop": "./img/comments-section-desktop.webp",
       "mobile": "./img/comments-section-mobile.webp"
     },
-    "id": 5
+    "id": 7,
+    "completed": false
   }
 ]

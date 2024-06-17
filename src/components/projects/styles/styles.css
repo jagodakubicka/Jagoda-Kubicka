@@ -21,7 +21,8 @@
   flex-direction: row-reverse;
 }
 .project-filterCtn {
-  margin-top: 50px;
+  max-width: 60%;
+  margin: 50px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,6 +60,12 @@
   font-size: 25px;
   padding: 20px;
 }
+.project-title__progress {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: var(--primary-color);
+}
 .project-img {
   max-width: 100%;
   width: 400px;
@@ -66,7 +73,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
 .project-img__desktop {
   width: 250px;
   height: 160px;
@@ -163,18 +172,15 @@
   transition: 0.4s ease-in-out;
   transform: scale(1.02);
 }
-
+.project-progress {
+  display: block;
+  margin: 40px auto;
+  font-size: 5rem;
+  color: var(--primary-color);
+  opacity: 0.3;
+}
 @media (min-width: 998px) {
   .project-img__screen {
     overflow-y: scroll;
-    /* &::-webkit-scrollbar {
-    width: 10px;
-  }
-  &::-webkit-scrollbar-track {
-    background-color: var(--primary-light-color);
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
-  } */
   }
 }
