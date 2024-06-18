@@ -2,7 +2,7 @@
   {
     "title": "Pet App",
     "tags": ["Next.js", "Tailwind", "TypeScript"],
-    "desc": "Project in collaboration with other Developers. Pet App is for individual pet owners as well as for animal shelters, trainers or pet hotels to store data about each pet to help with vet appointents, medication and other pet informations.",
+    "desc": "Pet App is a collaboration with other developers aimed at providing a comprehensive solution for individual pet owners, animal shelters, trainers, and pet hotels. The app enables users to efficiently store and manage data about each pet, including vet appointments, medications, and other essential information.",
     "github": "https://github.com/WitchDevelops/cardboard-fort",
     "preview": "https://cardboard-fort.vercel.app/",
     "img": {
@@ -15,7 +15,7 @@
   {
     "title": "Japan Journeys",
     "tags": ["HTML", "CSS", "VUE", "TypeScript", "Firebase"],
-    "desc": "Travel guide about Japan with places selected from my presonal favourites. Each place has also a comments section for review, and if logged in as Admin, also possible to add, edit and remove posts.",
+    "desc": "This travel guide highlights my personal favorite places in Japan. Each destination includes a comments section where users can leave reviews. Admins have additional functionality to add, edit, and remove posts.",
     "github": "https://github.com/jagodakubicka/japan-journeys",
     "preview": "",
     "img": {
