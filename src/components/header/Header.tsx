@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import gsap from 'gsap';
 
 //svg
@@ -88,33 +89,49 @@ export default function Header() {
 
   return (
     <div className='header'>
-      <div ref={sakuraWrapper} className='header-animations'>
-        <Sakura className='header-sakuraBranch' />
-      </div>
-      <div className='header__content'>
-        <div className='header__title'>
-          <h1>
-            Hello. I'm <br />
-            Jagoda
-          </h1>
+      <div className='header-wrapper'>
+        <div ref={sakuraWrapper} className='header-animations'>
+          <Sakura className='header-sakuraBranch' />
         </div>
-        <div className='header__links'>
-          <a href='https://github.com/jagodakubicka' target='_blank'>
-            <FontAwesomeIcon icon={faGithub} className='icon' />
-          </a>
-          <a href='https://www.linkedin.com/in/jagoda-kubicka/' target='_blank'>
-            <FontAwesomeIcon icon={faLinkedin} className='icon' />
-          </a>
-          <a href='mailto:jag.kubicka@gmail.com'>
-            <FontAwesomeIcon icon={faEnvelope} className='icon' />
-          </a>
+        <div className='header__content'>
+          <div className='header__title'>
+            <h1>
+              Hello. I'm <br />
+              Jagoda
+            </h1>
+          </div>
+          <div className='header__links'>
+            <a href='https://github.com/jagodakubicka' target='_blank'>
+              <FontAwesomeIcon icon={faGithub} className='icon' />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/jagoda-kubicka/'
+              target='_blank'>
+              <FontAwesomeIcon icon={faLinkedin} className='icon' />
+            </a>
+            <a href='mailto:jag.kubicka@gmail.com'>
+              <FontAwesomeIcon icon={faEnvelope} className='icon' />
+            </a>
+          </div>
+          <div className='header__text'>
+            <p>
+              I'm a curiosity-driven enthusiast of building websites and apps.
+            </p>
+            <p>Also a fan of Japanese culture.</p>
+          </div>
         </div>
-        <div className='header__text'>
-          <p>
-            I'm a curiosity-driven enthusiast of building websites and apps.
-          </p>
-          <p>Also a fan of Japanese culture.</p>
-        </div>
+        <a href='#about'>
+          <div className='header-scroll'>
+            <motion.div
+              animate={{ y: [0, 24, 0] }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                repeatType: 'loop',
+              }}
+              className='header-scroll__circle'></motion.div>
+          </div>
+        </a>
       </div>
     </div>
   );

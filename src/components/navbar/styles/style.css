@@ -4,7 +4,7 @@
   border-radius: 0% 100% 0% 100% / 53% 0% 100% 47%;
   margin: 0;
   padding: 1em 0;
-  position: relative;
+  position: fixed;
   z-index: 10;
 }
 
