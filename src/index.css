@@ -59,3 +59,31 @@ h1 {
 img {
   max-width: 100%;
 }
+
+.section-title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.bg-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 83% 30% 30% 78% / 59% 40% 60% 40%;
+  background: rgb(241, 215, 225);
+  filter: blur(100px);
+}
+.bg-circle--top {
+  top: 0;
+  left: 0;
+}
+.bg-circle--middle {
+  top: 50%;
+  right: 0;
+  border-radius: 66% 30% 63% 13% / 88% 40% 60% 23%;
+}
+.bg-circle--bottom {
+  bottom: 0;
+  left: 0;
+}
