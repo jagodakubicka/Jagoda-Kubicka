@@ -6,11 +6,15 @@ import { motion } from 'framer-motion';
 import './styles/styles.css';
 import 'react-vertical-timeline-component/style.min.css';
 import { SectionTitle } from '../sectionTitle/SectionTitle';
+import { faCode, faChartSimple } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 interface ExperienceCardProps {
   experience: {
     title: string;
     company_name: string;
+    experience_icon: IconProp;
     date: string;
     points: string[];
   };
@@ -20,6 +24,7 @@ const experiences = [
     title: 'Frontend Developer',
     company_name: 'eStoreLabs',
     date: 'Sep 2023 - May 2024',
+    experience_icon: faCode,
     points: [
       'Developed the frontend layer for a web application PIM & DAM using React, TypeScript, SCSS, and Bootstrap.',
       'Built and optimized the frontend for the company’s new website using TWIG, SCSS, and JavaScript within the headless CMS - Sulu with a focus on accessibility and SEO optimization',
@@ -31,6 +36,7 @@ const experiences = [
     title: 'Junior Frontend Developer',
     company_name: 'eStoreLabs',
     date: 'May 2022 - Sep 2023',
+    experience_icon: faCode,
     points: [
       'Developed responsive Landing Pages & Rich Content using HTML, CSS, SCSS and JavaScript.',
       'Transformed designs from Figma and Photoshop into coded layouts.',
@@ -43,6 +49,7 @@ const experiences = [
     title: 'F&H Excess Specialist',
     company_name: 'Avon',
     date: 'Oct 2019 - Nov 2021',
+    experience_icon: faChartSimple,
     points: [
       'Planned and executed excess sales offers in Central Europe (online & print), leveraging data analysis to drive campaign effectiveness.',
       'Collaborated with the Digital Team on creating online sales offers, enhancing the digital presence and sales performance.',
@@ -53,6 +60,7 @@ const experiences = [
     title: 'Fashin&Home Category Coordinator',
     company_name: 'Avon',
     date: 'July 2018 - Oct 2019',
+    experience_icon: faChartSimple,
     points: [
       'Supported Product Managers in daily tasks, including market research, data analysis, and campaign planning, gaining valuable insights into product management processes.',
       'Provided detailed product information to Customer Service, enhancing customer satisfaction and support effectiveness.',
@@ -71,10 +79,13 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => (
     contentArrowStyle={{ borderRight: '7px solid var(--light-color)' }}
     date={experience.date}
     dateClassName='experience-card__date'
-    iconStyle={{ background: 'white' }}
+    iconStyle={{ background: 'white', color: 'var(--primary-dark-color)' }}
     icon={
-      <div>
-        <img src='' alt={experience.company_name} />
+      <div className='experience-iconCtn'>
+        <FontAwesomeIcon
+          icon={experience.experience_icon}
+          className='experience-icon'
+        />
       </div>
     }>
     <div>

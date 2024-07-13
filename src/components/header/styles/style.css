@@ -81,6 +81,7 @@ svg {
   height: 50px;
   border-radius: 5rem;
   border: 4px solid var(--primary-color);
+  z-index: 100;
 }
 .header-scroll__circle {
   width: 12px;

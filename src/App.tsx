@@ -5,9 +5,8 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import Footer from './components/footer/Footer';
 import './App.css';
-import RootLayout from './components/navbar/RootLayout';
+import RootLayout from './components/layout/RootLayout';
 import Home from './pages/home/Home';
 import Portfolio from './pages/portfolio/Portfolio';
 import NotFound from './pages/notfound/NotFound';
@@ -24,7 +23,7 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path='portfolio'
+        path='projects'
         element={
           <AnimatedLayout>
             <Portfolio />
@@ -46,8 +45,6 @@ function App() {
   return (
     <div className='App'>
       <RouterProvider router={router} />
-
-      <Footer />
     </div>
   );
 }

@@ -21,3 +21,12 @@
   font-family: var(--secondary-font);
   font-size: 1.3rem;
 }
+.experience-iconCtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+.experience-icon {
+  margin: 0 auto;
+}

@@ -35,8 +35,7 @@ const AnimatedLayout: React.FC<AnimatedLayoutProps> = ({ children }) => {
         animate='in'
         exit='out'
         variants={pageVariants}
-        transition={pageTransition}
-        style={{ position: 'absolute', width: '100%' }}>
+        transition={pageTransition}>
         {children}
       </motion.div>
     </AnimatePresence>
