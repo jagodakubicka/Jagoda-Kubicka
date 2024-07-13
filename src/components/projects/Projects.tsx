@@ -51,11 +51,6 @@ export default function Projects() {
                   <img src={img.desktop} alt={title} />
                 </div>
               </div>
-              <div className='project-img__mobile'>
-                <div className='project-img__screen project-img__screen--mobile'>
-                  <img src={img.mobile} alt={title} />
-                </div>
-              </div>
             </div>
           </div>
         ))}

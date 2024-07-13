@@ -21,10 +21,10 @@ const experiences = [
     company_name: 'eStoreLabs',
     date: 'Sep 2023 - May 2024',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Developed the frontend layer for a web application PIM & DAM using React, TypeScript, SCSS, and Bootstrap.',
+      'Built and optimized the frontend for the company’s new website using TWIG, SCSS, and JavaScript within the headless CMS - Sulu with a focus on accessibility and SEO optimization',
+      'Collaborated closely with UX/UI designers to enhance user flows and interface layouts, ensuring a seamless user experience',
+      'Code reviews, contributing to the overall quality of the codebase',
     ],
   },
   {
@@ -32,10 +32,11 @@ const experiences = [
     company_name: 'eStoreLabs',
     date: 'May 2022 - Sep 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Developed responsive Landing Pages & Rich Content using HTML, CSS, SCSS and JavaScript.',
+      'Transformed designs from Figma and Photoshop into coded layouts.',
+      'Troubleshot and resolved content display errors and compatibility issues with browsers and WYSIWYG editors.',
+      'Documented e-retailer requirements to align with project goals and technical specifications.',
+      'Interacted with clients to gather requirements and develop tailored solutions, supporting project managers in scoping and delivery.',
     ],
   },
   {
@@ -43,10 +44,9 @@ const experiences = [
     company_name: 'Avon',
     date: 'Oct 2019 - Nov 2021',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Planned and executed excess sales offers in Central Europe (online & print), leveraging data analysis to drive campaign effectiveness.',
+      'Collaborated with the Digital Team on creating online sales offers, enhancing the digital presence and sales performance.',
+      'Managed the excess digital offer store, optimizing product listings and driving sales through data-driven decision-making.',
     ],
   },
   {
@@ -54,10 +54,9 @@ const experiences = [
     company_name: 'Avon',
     date: 'July 2018 - Oct 2019',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Supported Product Managers in daily tasks, including market research, data analysis, and campaign planning, gaining valuable insights into product management processes.',
+      'Provided detailed product information to Customer Service, enhancing customer satisfaction and support effectiveness.',
+      'Volunteered for manual testing of a new product management system, identifying and reporting issues to improve user experience and system functionality. This proactive involvement helped streamline the implementation process and ensured a smoother transition to the new system.',
     ],
   },
 ];
@@ -71,6 +70,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => (
     }}
     contentArrowStyle={{ borderRight: '7px solid var(--light-color)' }}
     date={experience.date}
+    dateClassName='experience-card__date'
     iconStyle={{ background: 'white' }}
     icon={
       <div>

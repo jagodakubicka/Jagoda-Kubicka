@@ -3,14 +3,19 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.experience-card {
+}
 
-.vertical-timeline-element-date {
+.experience-card__date {
   font-family: var(--secondary-font);
+  font-size: 1.2rem !important;
 }
 
 .experience-card__company {
   margin: 0;
   font-family: var(--secondary-font);
+  font-size: 1.5rem !important;
+  color: var(--primary-color);
 }
 .experience-card__desc {
   font-family: var(--secondary-font);

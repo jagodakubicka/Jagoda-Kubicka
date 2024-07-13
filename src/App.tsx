@@ -9,7 +9,7 @@ import Footer from './components/footer/Footer';
 import './App.css';
 import RootLayout from './components/navbar/RootLayout';
 import Home from './pages/home/Home';
-import Projects from './components/projects/Projects';
+import Portfolio from './pages/portfolio/Portfolio';
 import NotFound from './pages/notfound/NotFound';
 import AnimatedLayout from './components/AnimatedLayout';
 const router = createBrowserRouter(
@@ -24,10 +24,10 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path='projects'
+        path='portfolio'
         element={
           <AnimatedLayout>
-            <Projects />
+            <Portfolio />
           </AnimatedLayout>
         }
       />

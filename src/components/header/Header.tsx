@@ -117,7 +117,10 @@ export default function Header() {
             <p>
               I'm a curiosity-driven enthusiast of building websites and apps.
             </p>
-            <p>Also a fan of Japanese culture.</p>
+            <p>
+              Also, you will probably notice that I am a fan of Japanese
+              culture.
+            </p>
           </div>
         </div>
         <a href='#about'>

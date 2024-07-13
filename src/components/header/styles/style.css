@@ -37,7 +37,7 @@ svg {
 .header__content {
   max-width: 900px;
   display: block;
-  padding: 50px;
+  padding: 20px;
   position: relative;
   z-index: 5;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import geishaImg from './img/geisha_sketch.png';
 
 //styles
 import './styles/style.css';
@@ -10,7 +11,9 @@ export default function About() {
       <SectionTitle title='Person Behind the Pixels' />
       <div className='about-content'>
         <div className='bg-circle bg-circle--middle'></div>
-        <div className='about-circle'></div>
+        <div className='about-circle'>
+          <img src={geishaImg} alt='' />
+        </div>
         <div className='about-me'>
           <p>
             I'm a frontend developer with over two years of experience in
