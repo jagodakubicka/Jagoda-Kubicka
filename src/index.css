@@ -34,7 +34,7 @@
 }
 ::selection {
   background: var(--secondary-color);
-  color: var(--primry-light-color);
+  color: var(--primary-light-color);
 }
 html {
   scroll-behavior: smooth;

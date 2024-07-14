@@ -5,7 +5,8 @@ import { Experience } from '../../components/experience/Experience';
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 //svg
-import { ReactComponent as Sakura } from '../../../public/Sakura.svg';
+import { ReactComponent as Sakura } from './img/Sakura.svg';
+import { TechStack } from '../../components/techStack/TechStack';
 
 export default function Home() {
   const sakuraWrapper = useRef<HTMLDivElement>(null);
@@ -87,6 +88,7 @@ export default function Home() {
         <Sakura className='header-sakuraBranch' />
       </div>
       <About />
+      <TechStack />
       <Experience />
       <Contact />
     </>

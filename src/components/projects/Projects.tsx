@@ -1,19 +1,26 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import { Filter } from './Filter';
-import data from './data.json';
+import { Filter, ProjectProps } from './Filter';
+import { db } from '../../../src/firebase/config';
+import { collection, getDocs } from 'firebase/firestore';
 import './styles/styles.css';
 
 export default function Projects() {
-  const [project, setProject] = useState(data);
-  const [filtered, setFiltered] = useState(data);
+  const [project, setProject] = useState<ProjectProps[]>([]);
+  const [filtered, setFiltered] = useState<ProjectProps[]>([]);
   const [activeBtn, setActiveBtn] = useState('all');
 
-  const fetchProject = () => {
-    const projectData = data;
-    setProject(projectData);
-    setFiltered(projectData);
-  };
+  useEffect(() => {
+    const ref = collection(db, 'portfolio');
+    getDocs(ref).then((snapshot) => {
+      let results: any = [];
+      snapshot.docs.forEach((doc) => {
+        results.push({ id: doc.id, ...doc.data() });
+      });
+      setProject(results);
+      setFiltered(results);
+    });
+  }, []);
 
   return (
     <>
@@ -24,36 +31,61 @@ export default function Projects() {
         setActiveBtn={setActiveBtn}
       />
       <div className='projects-container'>
-        {filtered.map(({ id, title, tags, desc, github, preview, img }) => (
-          <div className='project' key={id}>
-            <div className='project-content'>
-              <h3 className='project-title'>{title}</h3>
-              <div className='project-tech'>
-                {tags.map((item) => (
-                  <p className='project-tag' key={item}>
-                    {item}
-                  </p>
-                ))}
+        {filtered.map(
+          ({
+            id,
+            p_title,
+            p_tags,
+            p_desc,
+            p_github,
+            p_preview,
+            p_img,
+            p_inProgress,
+            p_display,
+          }) => (
+            <div className='project' key={id}>
+              <div className='project-content'>
+                <h3 className='project-title'>
+                  {p_title}
+
+                  {p_inProgress ? (
+                    <span className='project-title__progress'> in progess</span>
+                  ) : (
+                    ''
+                  )}
+                </h3>
+                <div className='project-tech'>
+                  {p_tags.map((item) => (
+                    <p className='project-tag' key={item}>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+                <p className='project-desc'>{p_desc}</p>
+                <div className='project-links'>
+                  {p_inProgress && p_preview === '' ? (
+                    ''
+                  ) : (
+                    <a href={p_preview} target='_blank'>
+                      live project
+                    </a>
+                  )}
+
+                  <a href={p_github} target='_blank'>
+                    github
+                  </a>
+                </div>
               </div>
-              <p className='project-desc'>{desc}</p>
-              <div className='project-links'>
-                <a href={preview} target='_blank'>
-                  live project
-                </a>
-                <a href={github} target='_blank'>
-                  github
-                </a>
-              </div>
-            </div>
-            <div className='project-img'>
-              <div className='project-img__desktop'>
-                <div className='project-img__screen project-img__screen--desktop'>
-                  <img src={img.desktop} alt={title} />
+              <div className='project-img'>
+                <div className='project-img__desktop'>
+                  <div className='project-img__screen project-img__screen--desktop'>
+                    <img src={p_img} alt={p_title} />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          )
+        )}
       </div>
     </>
   );

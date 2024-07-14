@@ -1,16 +1,14 @@
 import { useEffect } from 'react';
 
-interface ImgProps {
-  desktop: string;
-  mobile: string;
-}
-interface ProjectProps {
-  title: string;
-  tags: string[];
-  desc: string;
-  github: string;
-  preview: string;
-  img: ImgProps;
+export interface ProjectProps {
+  p_title: string;
+  p_tags: string[];
+  p_desc: string;
+  p_github: string;
+  p_preview: string;
+  p_img: string;
+  p_display: boolean;
+  p_inProgress: boolean;
   id: number;
 }
 interface FilterProps {
@@ -31,12 +29,12 @@ export const Filter: React.FC<FilterProps> = ({
       setFiltered(projects);
       return;
     }
-    const filtered = projects.filter((item) => item.tags.includes(activeBtn));
+    const filtered = projects.filter((item) => item.p_tags.includes(activeBtn));
     setFiltered(filtered);
   }, [activeBtn]);
 
   const projectsTags = projects.map((item) => {
-    return item.tags;
+    return item.p_tags;
   });
   const tagsArray = projectsTags.flat(1);
   const removedDuplicatedTags = [...new Set(tagsArray)];
