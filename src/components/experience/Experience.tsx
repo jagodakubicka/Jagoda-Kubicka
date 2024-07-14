@@ -8,12 +8,19 @@ import { SectionTitle } from '../sectionTitle/SectionTitle';
 import { faCode, faChartSimple } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { db } from '../../../src/firebase/config';
-import { collection, getDocs } from 'firebase/firestore';
+import {
+  collection,
+  getDocs,
+  query,
+  orderBy,
+  QuerySnapshot,
+} from 'firebase/firestore';
 import './styles/styles.css';
 
 interface ExperienceCardProps {
   experience: {
     id: string;
+    exp_ended: number;
     exp_title: string;
     exp_comp: string;
     exp_icon: string;
@@ -59,14 +66,29 @@ export const Experience = () => {
   const [experiences, setExperiences] = useState<ExperienceCardProps[]>([]);
 
   useEffect(() => {
-    const ref = collection(db, 'experience');
-    getDocs(ref).then((snapshot) => {
-      let results: ExperienceCardProps[] = [];
-      snapshot.docs.forEach((doc) => {
-        results.push({ id: doc.id, ...(doc.data() as ExperienceCardProps) });
-      });
-      setExperiences(results);
-    });
+    const fetchExperiences = async () => {
+      try {
+        const q = query(
+          collection(db, 'experience'),
+          orderBy('exp_ended', 'desc')
+        );
+        const querySnapshot: QuerySnapshot = await getDocs(q);
+
+        const experiences: ExperienceCardProps[] = [];
+        querySnapshot.forEach((doc) => {
+          experiences.push({
+            id: doc.id,
+            ...(doc.data() as ExperienceCardProps),
+          });
+        });
+
+        setExperiences(experiences);
+      } catch (error) {
+        console.error('Error fetching documents: ', error);
+      }
+    };
+
+    fetchExperiences();
   }, []);
 
   return (
