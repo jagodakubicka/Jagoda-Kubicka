@@ -52,7 +52,10 @@ export default function Projects() {
                   {p_title}
 
                   {p_inProgress ? (
-                    <span className='project-title__progress'> in progess</span>
+                    <span className='project-title__progress'>
+                      {' '}
+                      in progress
+                    </span>
                   ) : (
                     ''
                   )}
