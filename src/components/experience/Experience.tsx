@@ -7,6 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { SectionTitle } from '../sectionTitle/SectionTitle';
 import { faCode, faChartSimple } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// @ts-ignore
 import { db } from '../../../src/firebase/config';
 import {
   collection,
@@ -77,6 +78,7 @@ export const Experience = () => {
         const experiences: ExperienceCardProps[] = [];
         querySnapshot.forEach((doc) => {
           experiences.push({
+            // @ts-ignore
             id: doc.id,
             ...(doc.data() as ExperienceCardProps),
           });
@@ -100,6 +102,7 @@ export const Experience = () => {
       <div>
         <VerticalTimeline lineColor='var(--primary-dark-color)'>
           {experiences.map((experience, index) => (
+            // @ts-ignore
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>

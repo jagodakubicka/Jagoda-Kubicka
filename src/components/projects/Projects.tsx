@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Filter, ProjectProps } from './Filter';
+// @ts-ignore
 import { db } from '../../../src/firebase/config';
 import { collection, getDocs } from 'firebase/firestore';
 import './styles/styles.css';

@@ -1,4 +1,5 @@
 import { SectionTitle } from '../sectionTitle/SectionTitle';
+// @ts-ignore
 import { db } from '../../../src/firebase/config';
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
