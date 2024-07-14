@@ -1,10 +1,20 @@
 .header {
   width: 100%;
-  height: 60vh;
+  height: 100dvh;
   position: relative;
-  max-width: var(--max-content-width);
+  background: var(--primary-gradient);
   margin: 0 auto;
   overflow-y: visible;
+}
+.header-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .header-animations {
   overflow: visible;
@@ -27,8 +37,7 @@ svg {
 .header__content {
   max-width: 900px;
   display: block;
-  margin: 0 auto;
-  padding: 50px;
+  padding: 20px;
   position: relative;
   z-index: 5;
 }
@@ -62,7 +71,29 @@ svg {
   margin: 0;
   text-wrap: pretty;
 }
+
+.header-scroll {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 50px;
+  border-radius: 5rem;
+  border: 4px solid var(--primary-color);
+  z-index: 100;
+}
+.header-scroll__circle {
+  width: 12px;
+  height: 12px;
+  margin: 5px auto;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
 @media (max-width: 600px) {
+  .header {
+    justify-content: center;
+  }
   .header__title h1 {
     font-size: 50px;
   }

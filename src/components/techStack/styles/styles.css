@@ -1,0 +1,21 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+.tag {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  min-width: 70px;
+  min-height: 70px;
+  padding: 0.5rem;
+  background-color: var(--primary-light-color);
+  border-radius: 50%;
+  box-shadow: 8px 8px 24px -17px rgba(66, 68, 90, 1);
+  text-align: center;
+}

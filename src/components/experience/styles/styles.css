@@ -1,0 +1,32 @@
+.experience {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.experience-card {
+}
+
+.experience-card__date {
+  font-family: var(--secondary-font);
+  font-size: 1.2rem !important;
+}
+
+.experience-card__company {
+  margin: 0;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem !important;
+  color: var(--primary-color);
+}
+.experience-card__desc {
+  font-family: var(--secondary-font);
+  font-size: 1.3rem;
+}
+.experience-iconCtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+.experience-icon {
+  margin: 0 auto;
+}

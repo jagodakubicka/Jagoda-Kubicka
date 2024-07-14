@@ -21,8 +21,9 @@
   flex-direction: row-reverse;
 }
 .project-filterCtn {
-  max-width: 60%;
-  margin: 50px auto 0;
+  margin: 0 auto;
+  margin-top: 180px;
+  max-width: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,10 +62,10 @@
   padding: 20px;
 }
 .project-title__progress {
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-left: 10px;
+  font-family: var(--secondary-font);
   color: var(--primary-color);
+  text-transform: uppercase;
+  margin: 0 1rem;
 }
 .project-img {
   max-width: 100%;
@@ -77,8 +78,8 @@
 }
 
 .project-img__desktop {
-  width: 250px;
-  height: 160px;
+  width: 100%;
+  height: 240px;
   background-color: var(--dark-color);
   border-radius: 1rem 1rem 0 0;
   padding: 10px;
@@ -98,27 +99,7 @@
   }
   scale: 0.8;
 }
-.project-img__mobile {
-  width: 150px;
-  height: 250px;
-  background-color: var(--dark-color);
-  border-radius: 1rem;
-  padding: 1.5rem 0.5rem;
-  position: relative;
-  &::after {
-    position: absolute;
-    content: '';
-    bottom: 2px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 2px solid var(--gray-color);
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-  scale: 0.8;
-}
+
 .project-img__screen {
   background-color: var(--light-color);
   width: 100%;

@@ -5,18 +5,39 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import Footer from './components/footer/Footer';
 import './App.css';
-import RootLayout from './components/navbar/RootLayout';
+import RootLayout from './components/layout/RootLayout';
 import Home from './pages/home/Home';
-import Projects from './components/projects/Projects';
+import Portfolio from './pages/portfolio/Portfolio';
 import NotFound from './pages/notfound/NotFound';
+import AnimatedLayout from './components/AnimatedLayout';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path='projects' element={<Projects />} />
-      <Route path='*' element={<NotFound />}></Route>
+      <Route
+        index
+        element={
+          <AnimatedLayout>
+            <Home />
+          </AnimatedLayout>
+        }
+      />
+      <Route
+        path='projects'
+        element={
+          <AnimatedLayout>
+            <Portfolio />
+          </AnimatedLayout>
+        }
+      />
+      <Route
+        path='*'
+        element={
+          <AnimatedLayout>
+            <NotFound />
+          </AnimatedLayout>
+        }
+      />
     </Route>
   )
 );
@@ -24,8 +45,6 @@ function App() {
   return (
     <div className='App'>
       <RouterProvider router={router} />
-
-      <Footer />
     </div>
   );
 }
