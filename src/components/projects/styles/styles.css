@@ -113,6 +113,7 @@
 
 .project-tech {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 20px;
 }
 .project-tag {
