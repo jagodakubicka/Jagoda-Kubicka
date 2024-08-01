@@ -23,9 +23,9 @@
 .about-me {
   max-width: 100%;
   min-width: 250px;
-  padding: 6rem;
+  padding: 2rem;
   background-color: var(--primary-light-color);
-  border-radius: 31% 69% 46% 54% / 43% 30% 70% 57%;
+  border-radius: 4rem;
   box-shadow: 8px 8px 24px -17px rgba(66, 68, 90, 1);
   flex: 1;
   z-index: 10;
@@ -79,5 +79,10 @@
   .about-circle {
     margin-right: -50px;
     margin-bottom: 0;
+  }
+  .about-me {
+    padding: 6rem;
+    border-radius: 31% 69% 46% 54% / 43% 30% 70% 57%;
+    box-shadow: 8px 8px 24px -17px rgba(66, 68, 90, 1);
   }
 }
