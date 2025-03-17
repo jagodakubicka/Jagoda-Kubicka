@@ -100,5 +100,6 @@ svg {
   .header-sakuraBranch {
     transform: rotate(20deg);
     top: -220px;
+    display: none;
   }
 }

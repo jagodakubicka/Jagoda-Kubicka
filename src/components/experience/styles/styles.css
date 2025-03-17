@@ -30,3 +30,11 @@
 .experience-icon {
   margin: 0 auto;
 }
+@media (max-width: 600px) {
+  .experience .bg-circle--top {
+    display: none;
+  }
+  .experience .bg-circle--bottom {
+    display: none;
+  }
+}
